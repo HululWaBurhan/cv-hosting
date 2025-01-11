@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Liger - CV</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jonathan Liger</h1>
+        <p>Tech Lead & High-Frequency Trading Expert</p>
+    </header>
+
+    <nav>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Programming Skills</a>
+        <a href="#education">Education</a>
+    </nav>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>2001 - 2008:</strong> Webraska<br>
+                Developer of mobile network-based GPS car navigation systems for mobile phones, PDAs, and automotive appliances.
+            </li>
+            <li><strong>2008 - 2010:</strong> Société Générale CIB then BNP Arbitrage<br>
+                As a contractor, developed high-frequency trading automatons.
+            </li>
+            <li><strong>2010 - Present:</strong> BNP Paribas<br>
+                Tech lead of a team of 25, focused on developing trading automatons.
+            </li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Programming Skills</h2>
+        <ul>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>TLA+</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>2003:</strong> Master's Degree in Computer Science<br>
+                Orsay University
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Jonathan Liger. Built with 💻 and ☕.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

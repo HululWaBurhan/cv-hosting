@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Tadjine - CV</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9fb;
+            color: #333;
+        }
+
+        header {
+            background-color: #2b2b7f;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mohammed Tadjine</h1>
+        <p>Trading Support Analyst | Passion for Mathematics</p>
+    </header>
+
+    <nav>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Key Skills</a>
+        <a href="#education">Education</a>
+        <a href="#interests">Interests</a>
+    </nav>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Mar 2024 - Present:</strong> Natixis Corporate and Investment Bank<br>
+                Front Office Business Analyst for Fixed Income Trading. Collaborating with traders and technical teams to support Fixed Income operations and ensure efficient workflow integration.
+            </li>
+            <li><strong>Dec 2019 - Dec 2023:</strong> BNP-CIB<br>
+                Trading Support Analyst specializing in "Equity derivatives" trading. Managed migrations to new infrastructures, compliance assurance, and real-time trading support.  
+                <em>Technical Stack:</em> Linux, Oracle DB, Shell Scripting, Windows Server.
+            </li>
+            <li><strong>Sep 2017 - Sep 2019:</strong> CA-GIP<br>
+                Database Administration (MySQL). Deployed MySQL Enterprise Monitor across 300 databases and implemented backup strategies.
+            </li>
+            <li><strong>Jun 2017 - Jul 2017:</strong> LI-PARAD Lab<br>
+                Developed SSD controller algorithms for garbage collection and wear leveling using C++.
+            </li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Key Skills</h2>
+        <ul>
+            <li><strong>Functional Expertise:</strong> Trading of equity derivatives, warrants, structured and exotic products.</li>
+            <li><strong>Technical Expertise:</strong> Linux (Redhat/Ubuntu), Oracle DB, PostgresQL, Shell & PowerShell scripting.</li>
+            <li><strong>Soft Skills:</strong> Translating trader needs into technical solutions, project management, compliance monitoring.</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>2019:</strong> Master's Degree in Computer Science for Data Science<br>
+                Université Paris-Saclay
+            </li>
+            <li><strong>2016:</strong> Bachelor's Degree in Computer Science<br>
+                Université de Versailles
+            </li>
+        </ul>
+    </section>
+
+    <section id="interests">
+        <h2>Interests</h2>
+        <ul>
+            <li>Recreational Mathematics: Interested in exploring mathematical worlds inspired by figures such as Neil Sloane (OEIS), Donald Knuth, Martin Gardner, John Conway, and Jean-Paul Delahaye.</li>
+            <li>Chess: Active member of a local chess club.</li>
+            <li>Music: Beginner piano player exploring classical compositions.</li>
+            <li>AI in Mathematics: Passionate about exploring type theory and proof automation for real-world applications.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mohammed Tadjine. Built with 💻 and ☕.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
